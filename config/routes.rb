@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'contracts#index'
+  root 'static_pages#home'
   resources :contracts
   resources :showrooms, only: [:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
