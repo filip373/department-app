@@ -10,10 +10,12 @@ class ContractsController < ApplicationController
 
   def new
     @contract = Contract.new
+    @showrooms = Showroom.all.map { |s| [s.name, s.id] }
   end
 
   def edit
     @contract.due_date = @contract.due_date.to_datetime
+    @showrooms = Showroom.all.map { |s| [s.name, s.id] }
   end
 
   def create

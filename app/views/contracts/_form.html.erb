@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :showroom_id %><br>
-    <%= f.text_field :showroom_id %>
+    <%= f.select :showroom_id, options_for_select(@showrooms, selected: @contract.showroom_id) %>
   </div>
   <div class="actions">
     <%= f.submit %>

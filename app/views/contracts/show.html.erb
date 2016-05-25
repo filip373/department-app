@@ -12,7 +12,7 @@
 
 <p>
   <strong>Due date:</strong>
-  <%= @contract.due_date %>
+  <%= @contract.due_date.strftime('%d.%m.%Y %T') %>
 </p>
 
 <p>

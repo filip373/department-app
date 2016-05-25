@@ -18,7 +18,7 @@
       <tr>
         <td><%= contract.title %></td>
         <td><%= contract.description %></td>
-        <td><%= contract.due_date %></td>
+        <td><%= contract.due_date.strftime('%d.%m.%Y %T') %></td>
         <td><%= contract.showroom.name %></td>
         <td><%= link_to 'Show', contract %></td>
         <td><%= link_to 'Edit', edit_contract_path(contract) %></td>
